@@ -1,0 +1,34 @@
+FOLLOWING ARE THE ERRORS I FACED DURING COMPLETING THE ASSIGNMENT:
+HASSAN JAWWAD 20L-1122 F 
+
+LINE no: 84 in bigint.cpp
+1)I was using object.[i] in a loop whereas I had not declared it so later I got the point and used test the object I had made:
+
+before(error): if (object.v[i] != 0)
+after: if (test.v[i] != 0)
+
+LINE no: 99 IN bigint.cpp
+1)I was returning output in the ofstream operator whereas I had declared out in the function 
+it was resolved later by returning out:
+
+before(error): return output;
+after:return out;
+
+LINE no: 117 in bigint.cpp
+3)I was using pow built in function without including the library cmath in the visual studio it was giving an error 
+
+before(error): memory = memory * (pow(10, POW));
+after: #include<cmath>
+ memory = memory * (pow(10, POW));
+
+LINE no: 131 in bigint.cpp
+4)I was incrementing i without initializing it 
+before(error):int i; 
+(;i<SIZE;i++)
+after:int i=0;
+(;i<SIZE;i++)
+
+LINE no: 2 in driver.cpp
+5)I was including header file with the wrong name in driver.cpp
+before(error):#include"Bigint.h"
+after:#include"bigint.h"
